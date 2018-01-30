@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+    position:fixed;
+ 
+}
+.menuitem {
+  padding:8px;
+  margin-top:7px;
+  border-bottom:1px solid #f1f1f1;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+  margin-left:400px;
+}
+.right {
+  background-color:lightblue;
+  float:right;
+  width:20%;
+  padding:10px 15px;
+  margin-top:7px;
+  position:fixed;
+  right:0;
+}
+ footer {
+    padding: 15px;
+    color: black;
+    background-color: #f1f1f1;
+    clear: left;
+    text-align: center;
+}
+
+#zusammenfassung {
+	float: right;
+	border: 3px solid orange;
+	margin: 15px;
+}
+.mySlides {display:none;}
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: Black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+ .justify { text-align: justify; }
+}
+</style>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 0000);
+}
+</script>
+</head>
+
+
+<div style="background-color:#f1f1f1;padding:15px;">
+<font><size="12" face="Times New Roman"><a href="file:///C:/Users/Administrator/Desktop/html/Deckblatt.html"><h1>Praktikum</h1></a></div>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Inhaltsverzeichnis.html">Zum Verzeichnis</a></div>
+	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Motivation%20und%20Bewerbung.html">Motivation und Bewerbung</a></div>
+   	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Vorkenntnisse,Hoffnungen,Bef%C3%BCrchtungen.html">Vorknntnisse,Hoffnungen,Befürchtungen</a></div>
+    <div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Vorstellung%20der%20Praktikumsstelle.html">Vorstellung der Praktikumstelle</a></div>
+    <div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Vorstellung%20der%20Betriebsstruktur.html">Vorstellung der Betriebsstruktur</div>
+	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Tätigkeitsbereich.html">Tätigkeitsbereich</a></div>
+	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Aufgaben.html">Aufgaben</a></div>
+	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Reflexion.html">Reflexion</a></div>
+  </div>
+
+
+<div class="main" <font><size="12" face="Times New Roman"><h1>Ein zwei Wöchiges Praktikum bei der FH vom 22.1.2018 bis 2.2.2018, von Fabian Malenkovic</h1>
+ 
+<div class="w3-content w3-section" style="max-width:900px"
+	<img class="mySlides" src="deck.png" style="width:100%">
+		<img class="mySlides" src="deck.png" style="width:100%">
+	<img class="mySlides" src="Platz.jpg" style="width:100%">
+	<img class="mySlides" src="3.jpg" style="width:100%">
+	<img class="mySlides" src="4.jpg" style="width:100%">	
+	<img class="mySlides" src="tag 2.jpg" style="width:100%">
+<font><size="12" face="Times New Roman">
+ <h1>Die besten Erlebnisse in der ersten Woche</h1>
+ <p class="justify"><div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Taschenrechner.html">Wer sehen will wie ein Taschenrechner funktoniert soll sich das anschauen.</a></div>
+ <p class="justify"><div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Tätigkeitsbereich.html">Praktikumsprojekt! Bratenthermometer mit Android Ambindung Tag 4.</a></div>
+ <p class="justify"><div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Reflexion.html">Wer wissen will wie die erste Woche war ,sollte sich das anschauen.</a></div>
+		
+</div></div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); 
+}
+</script>
+
+  
+<footer> Quellen:<a href="https://www.fh-aachen.de">Offizielle FH Aachen Seite</a></footer>
+</font>
+
+</div>
+
+
+
+</html>

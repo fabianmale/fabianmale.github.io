@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+    position:fixed;
+ 
+}
+.menuitem {
+  padding:8px;
+  margin-top:7px;
+  border-bottom:1px solid #f1f1f1;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+  margin-left:370px;
+}
+.right {
+  background-color:lightblue;
+  float:right;
+  width:20%;
+  padding:10px 15px;
+  margin-top:7px;
+  position:fixed;
+  right:0;
+}
+ footer {
+    padding: 15px;
+    color: black;
+    background-color: #f1f1f1;
+    clear: left;
+    text-align: center;
+}
+
+#zusammenfassung {
+	float: right;
+	border: 3px solid orange;
+	margin: 15px;
+}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: Black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+} .justify { text-align: justify; }
+}
+</style>
+</head>
+
+
+<div style="background-color:#f1f1f1;padding:15px;">
+<font><size="12" face="Times New Roman"><a href="file:///C:/Users/Administrator/Desktop/html/Deckblatt.html"><h1>Praktikum</h1></a></div>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Inhaltsverzeichnis.html">Zum Verzeichnis</a></div>
+	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Motivation%20und%20Bewerbung.html">Motivation und Bewerbung</a></div>
+   	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Vorkenntnisse,Hoffnungen,Bef%C3%BCrchtungen.html">Vorknntnisse,Hoffnungen,Befürchtungen</a></div>
+    <div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Vorstellung%20der%20Praktikumsstelle.html">Vorstellung der Praktikumstelle</a></div>
+    <div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Vorstellung%20der%20Betriebsstruktur.html">Vorstellung der Betriebsstruktur</div>
+	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Tätigkeitsbereich.html">Tätigkeitsbereich</a></div>
+	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Aufgaben.html">Aufgaben</a></div>
+	<div class="menuitem"><a href="file:///C:/Users/Administrator/Desktop/html/Reflexion.html">Reflexion</a></div>
+
+  </div>
+
+
+
+  <div class="main">
+   <script type="text/javascript">
+<!--
+function Check(Eingabe) {
+  var nur_das ="0123456789[]()-+*%/";
+  for (var i = 0; i < Eingabe.length; i++)
+   if (nur_das.indexOf(Eingabe.charAt(i))<0 ) return false;
+  return true;
+ }
+
+ function Ergebnis() {
+   var x = 0;
+  if (Check(window.document.Rechner.Display.value))
+     x = eval(window.document.Rechner.Display.value);
+   window.document.Rechner.Display.value = x;
+ }
+
+ function Hinzufuegen(Zeichen) {
+   window.document.Rechner.Display.value =
+   window.document.Rechner.Display.value + Zeichen;
+ }
+
+ function Sonderfunktion(Funktion) {
+   if (Check(window.document.Rechner.Display.value)) {
+     if(Funktion == "sqrt") {
+       var x = 0;
+     x = eval(window.document.Rechner.Display.value);
+     window.document.Rechner.Display.value = Math.sqrt(x);
+   }
+   if(Funktion == "pow") {
+     var x = 0;
+     x = eval(window.document.Rechner.Display.value);
+     window.document.Rechner.Display.value = x * x;
+   }
+   if(Funktion == "log") {
+     var x = 0;
+     x = eval(window.document.Rechner.Display.value);
+     window.document.Rechner.Display.value = Math.log(x);
+   }
+  } else window.document.Rechner.Display.value = 0
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.button {  width:60px; text-align:center;
+           font-family:System,sans-serif;
+           font-size:100%; }
+.display { width:100%; text-align:right;
+           font-family:System,sans-serif;
+           font-size:100%; }
+-->
+</style>
+</head>
+<body text="#000000">
+
+<form name="Rechner" action="" onSubmit="Ergebnis();return false;">
+<table border="10" cellpadding="40" cellspacing="40">
+<tr>
+<td bgcolor="#C0C0C0">
+<input type="text" name="Display" align="right" class="display"></td>
+</tr><tr>
+<td  bgcolor="#E0E0E0">
+<table border="10" cellpadding="43" cellspacing="25">
+<tr>
+<td><input type="button"  class="button" value="  7   " onClick="Hinzufuegen('7')"></td>
+<td><input type="button"  class="button" value="  8   " onClick="Hinzufuegen('8')"></td>
+<td><input type="button" class="button" value="  9   " onClick="Hinzufuegen('9')"></td>
+<td><input type="button"  class="button" value="  +   " onClick="Hinzufuegen('+')"></td>
+</tr>
+<tr>
+<td><input type="button" class="button" value="  4   " onClick="Hinzufuegen('4')"></td>
+<td><input type="button" class="button" value="  5   " onClick="Hinzufuegen('5')"></td>
+<td><input type="button"  class="button" value="  6   " onClick="Hinzufuegen('6')"></td>
+<td><input type="button" class="button" value="  -   " onClick="Hinzufuegen('-')"></td>
+</tr>
+<tr>
+<td><input type="button" class="button" value="  1   " onClick="Hinzufuegen('1')"></td>
+<td><input type="button"  class="button" value="  2   " onClick="Hinzufuegen('2')"></td>
+<td><input type="button"  class="button" value="  3   " onClick="Hinzufuegen('3')"></td>
+<td><input type="button" class="button" value="  *   " onClick="Hinzufuegen('*')"></td>
+</tr>
+<tr>
+<td><input type="button"  class="button" value="  =   " onClick="Ergebnis()"></td>
+<td><input type="button"  class="button" value="  0   " onClick="Hinzufuegen('0')"></td>
+<td><input type="button"  class="button" value="  ,   " onClick="Hinzufuegen('.')"></td>
+<td><input type="button"  class="button" value="  /   " onClick="Hinzufuegen('/')"></td>
+</tr>
+<tr>
+<td><input type="button"  class="button" value=" √ " onClick="Sonderfunktion('sqrt')"></td>
+<td><input type="button"  class="button" value=" x² " onClick="Sonderfunktion('pow')"></td>
+<td><input type="button"  class="button" value=" log " onClick="Sonderfunktion('log')"></td>
+<td><input type="reset"   class="button" value="  C  "></td>
+</tr>
+</table>
+</td></tr></table>
+</form>
+	 
+	 </div>
+	   <div class="right">
+    <h2>Lösung</h2>
+	 <p class="justify">	Ich habe einen Javascript aus dem Internet genommen, damit der Rechner die Fähigkeit bekommt die Zahlen zu rechnen.
+	Danach habe ich die verschiedenden Buttons mit Befehlen kompiniert ,damit man nur Klicken muss um zu rechnen.</p>
+    </section>
+  </div><footer> Quellen:<a href="https://www.fh-aachen.de">Offizielle FH Aachen Seite</a></footer>
+</div>
+</font>
+</div>
+
+
+
+</html>

@@ -1,0 +1,138 @@
+01.
+package ch.programmieraufgaben.arrays.rpn;
+02.
+ 
+03.
+import java.util.Arrays;
+04.
+ 
+05.
+/**
+06.
+* @author Philipp Gressly (phi AT gressly DOT ch)
+07.
+*/
+08.
+public class RPN {
+09.
+ 
+10.
+int rpn(String ausdruck[]) {
+11.
+int[] stack = new int[ausdruck.length / 2 + 1];
+12.
+int   top   = -1;
+13.
+ 
+14.
+int readPos  = 0;
+15.
+int resultat;
+16.
+while(readPos < ausdruck.length) {
+17.
+String symbol = ausdruck[readPos];
+18.
+if("+".equals(symbol)) {
+19.
+resultat = stack[top - 1] + stack[top];
+20.
+top = top - 1;
+21.
+stack[top] = resultat;
+22.
+} else
+23.
+if("*".equals(symbol)) {
+24.
+resultat = stack[top - 1] * stack[top];
+25.
+top = top - 1;
+26.
+stack[top] = resultat;
+27.
+} else
+28.
+if("-".equals(symbol)) {
+29.
+resultat = stack[top - 1] - stack[top];
+30.
+top = top - 1;
+31.
+stack[top] = resultat;
+32.
+} else
+33.
+if("/".equals(symbol)) {
+34.
+resultat = stack[top - 1] / stack[top];
+35.
+top = top - 1;
+36.
+stack[top] = resultat;
+37.
+}
+38.
+else { // Kein Opreator
+39.
+top = top + 1;
+40.
+stack[top] = Integer.parseInt(symbol);
+41.
+}
+42.
+readPos = readPos + 1;
+43.
+}
+44.
+ 
+45.
+return stack[0];
+46.
+}
+47.
+ 
+48.
+public static void main(String[] args) {
+49.
+new RPN().tests();
+50.
+}
+51.
+ 
+52.
+void tests() {
+53.
+test(13, new String[] {"11", "2", "+"});
+54.
+test(22, new String[] {"11", "2", "*"});
+55.
+test(77, new String[] {"3", "4", "+", "11", "*"}); 
+56.
+test( 2, new String[] {"22", "13", "2", "-", "/"});
+57.
+}
+58.
+ 
+59.
+void test(int erwartet, String[] ausdruck) {
+60.
+int ist = rpn(ausdruck);
+61.
+System.out.println(Arrays.toString(ausdruck) + " liefert " + ist + " ...");
+62.
+if(ist == erwartet) {
+63.
+System.out.println(" ... ok.");
+64.
+} else {
+65.
+System.out.println(" ... FEHLER!");
+66.
+ 
+67.
+}
+68.
+}
+69.
+} // end of class RPN
